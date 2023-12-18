@@ -17,7 +17,9 @@
 
 <body>
     @include('partials.header')
-    @yield('content');
+    <div class="jumbotron-bg"></div>
+    @yield('content')
+    @include('partials.main')
     @include('partials.footer')
 </body>
 
