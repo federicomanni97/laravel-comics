@@ -18,4 +18,11 @@ Route::get('/', function () {
     $advices = config('infos.advices');
     // dd($products);
     return view('home', compact('products'), compact('advices'));
-});
+})->name('home');
+
+Route::get('/bonus', function () {
+    $products = config('db.comics');
+    $advices = config('infos.advices');
+    // dd($products);
+    return view('pages.bonus', compact('products'), compact('advices'));
+})->name('bonus');
