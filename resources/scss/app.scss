@@ -9,6 +9,7 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 h1 {
     color: $text-color;
@@ -24,4 +25,19 @@ a {
     background-size: cover;
     height: 400px;
     object-fit: cover;
+}
+
+.bg-comics{
+    background-color: #303030;
+}
+
+.imgwidth{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+*{
+    font-family: "Bangers", Open-sans;
+    font-size: 20px;
 }
