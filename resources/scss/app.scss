@@ -45,3 +45,19 @@ a {
 .smallwidth{
     width: 40px;
 }
+
+ul{
+    list-style: none;
+}
+
+.top-footer{
+    background-image: url('/resources/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.right-logo{
+    background-image: url('/resources/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
