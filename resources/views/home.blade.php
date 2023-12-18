@@ -24,9 +24,13 @@
         </div>    
         <div class="text-light d-flex align-items-center justify-content-between p-5">
         @foreach ($advices as $element)
-            <div>
-                <img src="{{$element['image']}}" alt="">
-                <span class="p-3">{{$element['title']}}</span>
+            <div class="d-flex align-items-center">
+                <div class="smallwidth">
+                    <img class="smallwidth" src="{{$element['image']}}" alt="">
+                </div>
+                <div>
+                    <span class="p-3">{{$element['title']}}</span>
+                </div>
             </div>
         @endforeach
     </div>
