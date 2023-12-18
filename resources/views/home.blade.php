@@ -17,6 +17,9 @@
                 </div>
             @endforeach
         </div>
+        <div class="text-center p-5">
+            <span class="fs-5 py-3 px-5 bg-primary text-light">Load More</span>
+        </div>    
     </div>
     
 </main>
