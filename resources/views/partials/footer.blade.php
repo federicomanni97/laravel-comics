@@ -48,4 +48,17 @@
                 </ul>
             </div>
         </div>
-    </footer>
+</footer>
+<div class="bg-dark">
+    <div class="container py-5 d-flex text-light align-items-center justify-content-between bg-dark">
+        <button class="bg-primary border-0 text-light">SIGN-UP NOW!</button>
+        <ul class="d-flex list-unstyled align-items-center">
+            <li class="text-primary px-5">FOLLOW US</li>
+            <li><i class="p-2 fa-brands fa-facebook-f"></i></li>
+            <li><i class="p-2 fa-brands fa-twitter"></i></li>
+            <li><i class="p-2 fa-brands fa-youtube"></i></li>
+            <li><i class="p-2 fa-brands fa-pinterest-p"></i></li>
+            <li><i class="p-2 fa-solid fa-location-dot"></i></li>
+        </ul>
+    </div>
+</div>

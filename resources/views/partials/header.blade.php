@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center p-4">
+    <div class="d-flex justify-content-between align-items-center p-3">
         <img src="{{Vite::asset('/resources/img/dc-logo.png')}}" alt="">
         <div class="text-uppercase">
             <ul class="d-flex list-unstyled">
