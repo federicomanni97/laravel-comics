@@ -22,18 +22,20 @@
         <div class="text-center p-5">
             <span class="fs-5 py-3 px-5 bg-primary text-light">Load More</span>
         </div>    
-        <div class="text-light d-flex align-items-center justify-content-between p-5">
-        @foreach ($advices as $element)
-            <div class="d-flex align-items-center">
-                <div class="smallwidth">
-                    <img class="smallwidth" src="{{$element['image']}}" alt="">
-                </div>
-                <div>
-                    <span class="p-3">{{$element['title']}}</span>
-                </div>
-            </div>
-        @endforeach
     </div>
+    <div class="text-light bg-primary d-flex align-items-center justify-content-between p-4">
+        <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    @foreach ($advices as $element)
+                    <div class="smallwidth">
+                        <img class="smallwidth" src="{{$element['image']}}" alt="">
+                    </div>
+                    <div>
+                        <span class="p-3">{{$element['title']}}</span>
+                    </div>                 
+                    @endforeach
+                </div>
+        </div>
     </div>
     
 </main>
