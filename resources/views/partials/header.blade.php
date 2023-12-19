@@ -4,7 +4,7 @@
         <div class="text-uppercase">
             <ul class="d-flex list-unstyled">
                 <li class="px-4"><a href="{{route('bonus')}}">Characters</a></li>
-                <li class="px-4"><a href="">Comics</a></li>
+                <li class="px-4"><a href="{{route('comics.index')}}">Comics</a></li>
                 <li class="px-4"><a href="">Movies</a></li>
                 <li class="px-4"><a href="">Tv</a></li>
                 <li class="px-4"><a href="">Games</a></li>
