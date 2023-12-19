@@ -27,8 +27,7 @@
             </div>
         </div>
         <div class="text-center p-5">
-            <span class="fs-5 py-3 px-5 bg-primary text-light">Load More</span>
-            <span class="fs-5 py-3 px-5 bg-primary text-light"><a class="fs-5 text-white" href="{{route('comics.index')}}">Back</a></span>
+            <span class="fs-5 py-3 px-5 bg-primary text-light"><a class="fs-5 text-white" href="{{route('comics.index')}}"><i class="fa-solid fa-arrow-left"></i> Back</a></span>
         </div>    
     </div>
     <div class="text-light bg-primary d-flex align-items-center justify-content-between p-4">
