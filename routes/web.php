@@ -28,24 +28,24 @@ Route::get('/bonus', function () {
 })->name('bonus');
 
 Route::get('/comics', function () {
-    $products = config('db.comics');
+    $comic = config('db.comics');
     $advices = config('infos.advices');
     // dd($products);
-    return view('comics.index', compact('products'), compact('advices'));
+    return view('comics.index', compact('comic', 'advices'));
 })->name('comics.index');
 
 Route::get('/comics/{id}', function ($id) {
-    $products = config('db.comics');
+    $comic = config('db.comics');
     $advices = config('infos.advices');
     // dd($products);
     $comics = null;
-    foreach ($products as $item) {
+    foreach ($comic as $item) {
         if ($item['id'] == $id) {
            $comics = $item;
         }
     }
     if ($comics) {
-        return view('comics.show', compact('products', 'advices', 'comics'));
+        return view('comics.show', compact('comic', 'advices', 'comics'));
     } else {
         abort(404); 
     }
