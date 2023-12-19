@@ -20,6 +20,7 @@
                         <p class="fs-6">{{$comics['description']}}</p>
                         <span class="text-white fs-4">{{$comics['series']}}</span>
                     </div>
+                    <span class="fs-5 py-1 px-3 bg-success text-light">{{$comics['price']}} </span>
                 </div>
             </div>
         </div>

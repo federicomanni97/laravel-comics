@@ -15,10 +15,10 @@
                     <div class="">
                         <img class="imgwidth" src="{{$product['thumb']}}" alt="{{$product['title']}}">
                     </div>
-                    <div class="py-2">
-                        <span class="text-white">{{$product['series']}}</span>
-                        <span><a href="{{route('comics.show', $product['id'])}}">Read More</a></span>                        
+                    <div class="py-2 d-flex flex-column">
+                        <span class="text-white py-2">{{$product['series']}}</span>
                     </div>
+                    <span class="bg-danger p-2"><a class="text-white" href="{{route('comics.show', $product['id'])}}">Read More</a></span>
                 </div>
             @endforeach
         </div>
