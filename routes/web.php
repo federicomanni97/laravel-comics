@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,26 +28,28 @@ Route::get('/bonus', function () {
     return view('pages.bonus', compact('products'), compact('advices'));
 })->name('bonus');
 
-Route::get('/comics', function () {
-    $comic = config('db.comics');
-    $advices = config('infos.advices');
-    // dd($products);
-    return view('comics.index', compact('comic', 'advices'));
-})->name('comics.index');
+// Route::get('/comics', function () {
+//     $comic = config('db.comics');
+//     $advices = config('infos.advices');
+//     // dd($products);
+//     return view('comics.index', compact('comic', 'advices'));
+// })->name('comics.index');
 
-Route::get('/comics/{id}', function ($id) {
-    $comic = config('db.comics');
-    $advices = config('infos.advices');
-    // dd($products);
-    $comics = null;
-    foreach ($comic as $item) {
-        if ($item['id'] == $id) {
-           $comics = $item;
-        }
-    }
-    if ($comics) {
-        return view('comics.show', compact('comic', 'advices', 'comics'));
-    } else {
-        abort(404); 
-    }
-})->name('comics.show');
+// Route::get('/comics/{id}', function ($id) {
+//     $comic = config('db.comics');
+//     $advices = config('infos.advices');
+//     // dd($products);
+//     $comics = null;
+//     foreach ($comic as $item) {
+//         if ($item['id'] == $id) {
+//            $comics = $item;
+//         }
+//     }
+//     if ($comics) {
+//         return view('comics.show', compact('comic', 'advices', 'comics'));
+//     } else {
+//         abort(404); 
+//     }
+// })->name('comics.show');
+
+Route::resource('comics', ComicController::class);

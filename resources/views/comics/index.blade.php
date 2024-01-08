@@ -10,13 +10,13 @@
             <span class="fs-3 py-3 px-5 bg-primary text-light">Current Series</span>
         </div>
         <div class="row">
-            @foreach ($comic as $product)
+            @foreach ($comics as $product)
                 <div class="col-12 col-md-4 col-lg-2 py-3">
                     <div class="">
-                        <img class="imgwidth" src="{{$product['thumb']}}" alt="{{$product['title']}}">
+                        <img class="imgwidth" src="{{$product->thumb}}" alt="{{$product['title']}}">
                     </div>
                     <div class="py-2 d-flex flex-column">
-                        <span class="text-white py-2">{{$product['series']}}</span>
+                        <span class="text-white py-2">{{$product->series}}</span>
                     </div>
                     <span class="bg-danger p-2"><a class="text-white" href="{{route('comics.show', $product['id'])}}">Read More</a></span>
                 </div>
@@ -28,16 +28,7 @@
     </div>
     <div class="text-light bg-primary d-flex align-items-center justify-content-between p-4">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                @foreach ($advices as $element)
-                <div class="smallwidth">
-                    <img class="smallwidth" src="{{$element['image']}}" alt="">
-                </div>
-                <div>
-                    <span class="p-3">{{$element['title']}}</span>
-                </div>                 
-                @endforeach
-            </div>
+            
         </div>
     </div>
 </main>
